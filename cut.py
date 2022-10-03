@@ -16,6 +16,6 @@ for parent, dirnames, filenames in os.walk(rootdir):#遍历每一张图片
         img = Image.open(currentPath)
         print (img.format, img.size, img.mode)
         #img.show()
-        box1 = (17, 16, 158, 189)#设置左、上、右、下的像素
+        box1 = (0, 59, 512, 571)#设置左、上、右、下的像素
         image1 = img.crop(box1) # 图像裁剪
-        image1.save(r"E:\AD datasets\voiceClassifyGoogle\Class\C_2"+'\\'+filename) #存储裁剪得到的图像
+        image1.save(r"E:\Document\new"+'\\'+filename) #存储裁剪得到的图像
